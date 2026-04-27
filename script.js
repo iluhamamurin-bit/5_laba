@@ -13,7 +13,7 @@ async function loadCats() {
             const card = document.createElement('div');
             card.className = 'card';
             card.innerHTML = `
-            <img src="https://cataas.com{cat._id}" alt="Котик">
+            <img src="https://cataas.com/cat/${cat._id}" alt="Котик">
             <div class="card-content">
                 <h3>Кот #${i + 1}</h3>
                 <p class="tags">Теги: ${cat.tags.length > 0 ? cat.tags.join(', ') : 'нет'}</p>
